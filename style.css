@@ -1,0 +1,49 @@
+table{
+    display: flex;
+    border: 2px solid cornsilk;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 75px;
+    font-size: larger;
+    border-radius: 20px;
+    background-color:rgba(0,0,0,0.3);
+    
+}
+tr{
+    display: flex;
+    margin: 40px;
+    color:cornsilk;
+}
+body{
+    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Lora', serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+    
+
+input{
+    border-radius: 8px;
+}    
+::placeholder{
+    display: flex;
+    justify-content: center;
+}
+button{
+    border-radius: 8px;
+    box-shadow: 0 2px #0a0a0a;
+}
+    
+.button:active {
+  
+    box-shadow: 0 3px #0a0a0a;
+    transform: translateY(4px);
+
+}
+

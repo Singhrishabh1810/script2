@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lora:ital@1&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+    <title>Form</title>
+</head><body background="hand.jpg">
+  <script src="script.js"></script>
+  <form id="myform" onsubmit="return getvals()"> 
+<table>
+  <tr><td><h1 style="color: cornsilk; border: 1px solid;padding: 1px;border-radius: 5px; background-color: palevioletred;">Sign Up</h1></td></tr>
+  <tr>
+   <td>Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   <td> <input type="text" placeholder="First Name" id="name1" onsubmit="getvals()"></td>
+   <td> <input type="text" placeholder="Last Name" id="name2" onclick="getvals()"></td></tr>
+
+
+   <tr> 
+   <td >Contact:&nbsp;&nbsp;&nbsp;</td>
+   <td> <input type="number" placeholder="Phone Number" id="numb" onsubmit="getvals()"></td>
+   
+   <td> <input type="email" placeholder="Email" id="gmail" onsubmit="getvals()" required></td>
+   </tr>
+   
+
+ <tr>  
+  <td> Password:</td><td><input type="password" id="pass" onsubmit="getvals()"></td></tr>
+ <tr>
+  <td><input type="checkbox" id="tnc" required></td><td>I agree to the given Terms and Conditions.</td></tr>
+ <tr>
+  <td><input type="Submit" id="fin" onclick="return check()"></input></td><td><input type="reset"></input></td></tr>
+</table>
+</form>
+
+    
+</body>
+</html>
